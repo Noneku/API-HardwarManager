@@ -1,29 +1,18 @@
-<<<<<<< HEAD
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-=======
+
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { TabMenuComponent } from "./tab-menu/tab-menu.component";
 import { FilterMatchMode, PrimeNGConfig } from "primeng/api";
 import {TabStatesServersComponent} from "./tab-states-servers/tab-states-servers.component";
->>>>>>> master
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-<<<<<<< HEAD
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, TabStatesServersComponent, TabMenuComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
-})
-export class AppComponent {
-  title = 'HardwareManager';
-=======
-  imports: [RouterOutlet, TabMenuComponent, CommonModule, TabStatesServersComponent],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
   title : String = "HardwareManager";
@@ -46,5 +35,4 @@ export class AppComponent implements OnInit {
       date: [FilterMatchMode.DATE_IS, FilterMatchMode.DATE_IS_NOT, FilterMatchMode.DATE_BEFORE, FilterMatchMode.DATE_AFTER]
     };
   }
->>>>>>> master
 }
