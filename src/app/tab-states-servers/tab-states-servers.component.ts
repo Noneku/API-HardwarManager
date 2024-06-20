@@ -17,6 +17,6 @@ export class TabStatesServersComponent implements OnInit{
   ngOnInit() {
     setInterval(() =>{
       this.serverService.getServers().subscribe();
-    });
+    }, 6000);
   }
 }

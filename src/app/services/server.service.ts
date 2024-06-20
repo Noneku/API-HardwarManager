@@ -9,12 +9,13 @@ import { Server } from "../model/ServerModel";
 export class ServerService {
 
   private http = inject(HttpClient);
-  servers = signal<Server[]>([])
+  servers = signal<Server[]>([]);
   readonly url = 'http://localhost:8080/api/serveurs';
 
 
   getServers(): Observable<Server[]> {
     return this.http.get<Server[]>(this.url).pipe(
+      //Met à jour servers avec les nouvelles valeurs émises
       tap(servers => this.servers.set(servers))
     );
   }
