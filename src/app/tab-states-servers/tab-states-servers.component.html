@@ -1,0 +1,28 @@
+<ul>
+  @for (server of servers() ; track server.id){
+    <li> {{ server.nom }} </li>
+    <li> {{ server.chargeCpu }}</li>
+  }
+</ul>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">NAME</th>
+    <th scope="col">IP - ADRESS</th>
+    <th scope="col">STATUS</th>
+    <th scope="col">CPU - Temp - Celcius</th>
+  </tr>
+  </thead>
+  <tbody>
+    @for (server of servers() ; track server.id){
+      <tr>
+        <th scope="row">{{ server.id }}</th>
+        <td>{{ server.nom }}</td>
+        <td>{{ server.adresseIp }}</td>
+        <td>{{ server.state }}</td>
+        <td>{{ server.chargeCpu }}</td>
+      </tr>
+    }
+  </tbody>
+</table>
