@@ -15,7 +15,7 @@
         <td>{{ server.nom }}</td>
         <td>{{ server.adresseIp }}</td>
         <td>{{ server.state }}</td>
-        <td>{{ server.chargeCpu }}</td>
+        <td [ngClass]="GetCpuClass(server.chargeCpu)">{{ server.chargeCpu }}</td>
         <td></td>
       </tr>
     }

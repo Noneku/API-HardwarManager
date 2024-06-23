@@ -1,0 +1,33 @@
+/* sidebar.component.scss */
+#sidebar-wrapper {
+  height: 100vh; /* Hauteur de la viewport */
+  width: 250px;
+  position: relative;
+  overflow-y: auto;
+  background-color: #343a40; /* Couleur de fond attrayante */
+  color: #ffffff; /* Couleur du texte */
+  border-right: 1px solid #495057; /* Bordure à droite */
+  padding-top: 20px;
+  margin-top: 0; /* Retirez la marge si nécessaire */
+  margin-bottom: 0; /* Retirez la marge si nécessaire */
+}
+
+.sidebar-heading {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: black;
+}
+
+.list-group-item {
+  border: none;
+  background-color: #343a40; /* Couleur de fond pour les éléments */
+  color: black;
+}
+
+.list-group-item:hover {
+  background-color: #3d444c; /* Couleur de fond au survol */
+}
+
+i {
+  margin-right: 1rem;
+}

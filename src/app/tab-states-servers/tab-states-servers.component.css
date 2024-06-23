@@ -1,0 +1,12 @@
+@keyframes color-change {
+  0% {
+    background-color: red; /* Début de l'animation en rouge */
+  }
+  100% {
+    background-color: white; /* Fin de l'animation en blanc */
+  }
+}
+
+.custom-animation {
+  animation: color-change 2s ease-in-out forwards; /* Durée de l'animation et timing */
+}

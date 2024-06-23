@@ -8,23 +8,20 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+<!-- app.component.html -->
 <header>
-  <app-navbar/>
+  <app-navbar></app-navbar>
 </header>
-<main>
-  <app-tab-states-servers/>
+<main class="d-flex">
+  <aside>
+    <app-sidebar></app-sidebar>
+  </aside>
+  <section id="content-wrapper">
+    <main class="container-fluid">
+      <app-tab-states-servers></app-tab-states-servers>
+    </main>
+  </section>
 </main>
 <footer></footer>
 </body>
 </html>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-
-<router-outlet />
